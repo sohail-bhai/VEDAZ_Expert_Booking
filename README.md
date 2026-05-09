@@ -367,10 +367,10 @@ If using MongoDB Atlas (recommended):
 ### Railway Backend
 
 ```env
-PORT=5000
 MONGO_URI=mongodb+srv://your-username:your-password@cluster.mongodb.net/vedaz_booking?retryWrites=true&w=majority
 CLIENT_URL=https://your-vercel-frontend-url.vercel.app
 ```
+Railway automatically provides the PORT environment variable. The backend uses process.env.PORT, so PORT does not need to be manually added on Railway.
 
 **Multiple Frontend Origins** (if needed):
 ```env
@@ -380,8 +380,8 @@ CLIENT_URL=http://localhost:5173,https://your-vercel-frontend-url.vercel.app
 ### Vercel Frontend
 
 ```env
-VITE_API_URL=https://your-railway-url.up.railway.app/api
-VITE_SOCKET_URL=https://your-railway-url.up.railway.app
+VITE_API_URL=https://vedazexpertbooking-production.up.railway.app/api
+VITE_SOCKET_URL=https://vedazexpertbooking-production.up.railway.app
 ```
 
 ---
@@ -392,10 +392,10 @@ VITE_SOCKET_URL=https://your-railway-url.up.railway.app
 
 ```bash
 # Should respond with status
-curl https://your-railway-url.up.railway.app/health
+curl https://vedazexpertbooking-production.up.railway.app/health
 
 # Should return expert list
-curl https://your-railway-url.up.railway.app/api/experts
+curl https://vedazexpertbooking-production.up.railway.app/api/experts
 ```
 
 ### Frontend Features
@@ -417,7 +417,6 @@ curl https://your-railway-url.up.railway.app/api/experts
 - **Demo Video:** your_demo_video_link_here
 - **Live Frontend:** https://vedaz-expert-booking.vercel.app
 - **Live Backend API:** https://vedazexpertbooking-production.up.railway.app
-
 ---
 
 ## Code Quality Notes
@@ -427,4 +426,3 @@ curl https://your-railway-url.up.railway.app/api/experts
 - Follows React and Node.js best practices
 - No external UI frameworks — custom CSS only
 
-For detailed feature walkthrough, see `DEMO_SCRIPT.md`
