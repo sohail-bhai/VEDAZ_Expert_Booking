@@ -414,7 +414,7 @@ curl https://vedazexpertbooking-production.up.railway.app/api/experts
 ## Submission Links
 
 - **GitHub Repository:** https://github.com/sohail-bhai/VEDAZ_Expert_Booking
-- **Demo Video:** your_demo_video_link_here
+- **Demo Video:** https://drive.google.com/file/d/1U8QP2FUvt_WPS3FZIGlaRJMSmtrb_dD6/view?usp=drive_link
 - **Live Frontend:** https://vedaz-expert-booking.vercel.app
 - **Live Backend API:** https://vedazexpertbooking-production.up.railway.app
 ---
